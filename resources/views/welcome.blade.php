@@ -1,152 +1,82 @@
 <!DOCTYPE html>
 <html>
-<title>My Resume</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
-</style>
+<head>
+  <title>Hotel Template</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
+  </style>
+</head>
+
 <body class="w3-light-grey">
-
-<!-- Page Container -->
-<div class="w3-content w3-margin-top" style="max-width:1400px;">
-
-  <!-- The Grid -->
-  <div class="w3-row-padding">
-  
-    <!-- Left Column -->
-    <div class="w3-third">
-    
-      <div class="w3-white w3-text-grey w3-card-4">
-        <div class="w3-display-container">
-          <img src="Image.jpg" style="width:100%" alt="Avatar">
-          <div class="w3-display-bottomleft w3-container w3-text-black">
-            <h2>Pranita Dayare</h2>
-          </div>
-        </div>
-        <div class="w3-container">
-          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Designer</p>
-          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Bhandara, India</p>
-          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>pranitadayare@gmail.com</p>
-          <p><i class="fa fa-phone fa-fw w3-margin-right w3-large w3-text-teal"></i>1234567890</p>
-          <hr>
-
-          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
-          <p>HTML & CSS</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
-          </div>
-          <p>Java</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:80%">
-              <div class="w3-center w3-text-white">80%</div>
+  <!-- Navigation Bar -->
+  <div class="w3-bar w3-white w3-large">
+    <a href="#" class="w3-bar-item w3-button w3-red w3-mobile"><i class="fa fa-bed w3-margin-right"></i>Logo</a>
+    <a href="rooms" class="w3-bar-item w3-button w3-mobile">Rooms</a>
+    <a href="about" class="w3-bar-item w3-button w3-mobile">About</a>
+    <a href="contact" class="w3-bar-item w3-button w3-mobile">Contact</a>
+    <a href="contact" class="w3-bar-item w3-button w3-right w3-light-grey w3-mobile">Book Now</a>
+  </div>
+  <!-- Header -->
+  <header class="w3-display-container w3-content" style="max-width:1500px;">
+    <img class="w3-image" src="img/logo.jpg" alt="The Hotel" style="min-width:1000px" width="1500" height="800">
+    <div class="w3-display-left w3-padding w3-col l6 m8">
+      <div class="w3-container w3-red">
+        <h2><i class="fa fa-bed w3-margin-right"></i>Hotel Name</h2>
+      </div>
+      <div class="w3-container w3-white w3-padding-16">
+        <form action="/action_page.php" target="_blank">
+          <div class="w3-row-padding" style="margin:0 -16px;">
+            <div class="w3-half w3-margin-bottom">
+              <label><i class="fa fa-calendar-o"></i> Check In</label>
+              <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="CheckIn" required>
+            </div>
+            <div class="w3-half">
+              <label><i class="fa fa-calendar-o"></i> Check Out</label>
+              <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="CheckOut" required>
             </div>
           </div>
-          <p>C/C++</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:70%">70%</div>
+          <div class="w3-row-padding" style="margin:8px -16px;">
+            <div class="w3-half w3-margin-bottom">
+              <label><i class="fa fa-male"></i> Adults</label>
+              <input class="w3-input w3-border" type="number" value="1" name="Adults" min="1" max="6">
+            </div>
+            <div class="w3-half">
+              <label><i class="fa fa-child"></i> Kids</label>
+            <input class="w3-input w3-border" type="number" value="0" name="Kids" min="0" max="6">
+            </div>
           </div>
-          <p>Python</p>
-          <div class="w3-light-grey w3-round-xlarge w3-small">
-            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
-          </div>
-          <br>
-
-          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
-          <p>English</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:80%"></div>
-          </div>
-          <p>Hindi</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:80%"></div>
-          </div>
-          <p>Marathi</p>
-          <div class="w3-light-grey w3-round-xlarge">
-            <div class="w3-round-xlarge w3-teal" style="height:24px;width:50%"></div>
-          </div>
-          <br>
-        </div>
-      </div><br>
-
-    <!-- End Left Column -->
-    </div>
-
-    <!-- Right Column -->
-    <div class="w3-twothird">
-    
-      <div class="w3-container w3-card w3-white w3-margin-bottom">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Python Projects Intern / The Intern Academy</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2021 - <span class="w3-tag w3-teal w3-round">Current</span></h6>
-          <p>Created a Whatsapp Auto Wisher using Python.</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Web Developer Intern / LetsGrowMore</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2021 - Oct 2021</h6>
-          <p>1. Created a single page website. 
-            <br>2. Created a web application having a simple layout and a “Get Users” button which makes an API call to get the user data.
-          </p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Web Development and Designing Intern / The Sparks Foundation</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2021 - Oct 2021</h6>
-          <p>Created a (Payment Gateway Integration) donation website where payment gateway is integrated.<br>Razorpay is used for payment page.
-          </p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Ready, Set, Agile! Virtual Experience Program / Cognizant</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2021 - Oct 2021</h6>
-          <p>Modules learnt :- Waterfall vs Agile, User Stories, Role Assignments and Ceremonies, Agile Tools and Concepts, Agile Curve Balls, Agile Methodology Review and Additional Resources.
-          </p><br>
-        </div>
+          <button class="w3-button w3-dark-grey" type="submit"><i class="fa fa-search w3-margin-right"></i> Search availability</button>
+        </form>
       </div>
-
-      <div class="w3-container w3-card w3-white">
-        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Manoharbhai Patel Institute of Engineering and Technology, Bhandara</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018 - 2022</h6>
-          <p>Bachelor Degree - RTMNU</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Nutan Kanya, Bhandara</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2018</h6>
-          <p>HSSC Education - Maharashtra State Board</p>
-          <hr>
-        </div>
-        <div class="w3-container">
-          <h5 class="w3-opacity"><b>Jaycees Convent, Bhandara</b></h5>
-          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>2016</h6>
-          <p>SSC Education - Maharashtra State Board</p><br>
-        </div>
-      </div>
-
-    <!-- End Right Column -->
     </div>
-    
-  <!-- End Grid -->
-  </div>
-  
-  <!-- End Page Container -->
-</div>
+  </header>
 
-<footer class="w3-container w3-teal w3-center w3-margin-top">
-  <p>Find me on social media.</p>
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
+  <!-- Add Google Maps -->
+  <script>
+  function myMap() {
+    myCenter=new google.maps.LatLng(41.878114, -87.629798);
+    var mapOptions= {
+      center:myCenter,
+      zoom:12, scrollwheel: false, draggable: false,
+      mapTypeId:google.maps.MapTypeId.ROADMAP
+    };
+    var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
 
+    var marker = new google.maps.Marker({
+      position: myCenter,
+    });
+    marker.setMap(map);
+  }
+  </script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
+  <!--
+  To use this code on your website, get a free API key from Google.
+  Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+  -->
 </body>
 </html>
