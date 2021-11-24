@@ -1,26 +1,6 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <title>Hotel Template</title>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <style>
-    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", Arial, Helvetica, sans-serif}
-  </style>
-</head>
+@extends('layouts.app')
+@section('content')
 
-<body class="w3-light-grey">
-  <!-- Navigation Bar -->
-  <div class="w3-bar w3-white w3-large">
-    <a href="#" class="w3-bar-item w3-button w3-red w3-mobile"><i class="fa fa-bed w3-margin-right"></i>Logo</a>
-    <a href="rooms" class="w3-bar-item w3-button w3-mobile">Rooms</a>
-    <a href="about" class="w3-bar-item w3-button w3-mobile">About</a>
-    <a href="contact" class="w3-bar-item w3-button w3-mobile">Contact</a>
-    <a href="contact" class="w3-bar-item w3-button w3-right w3-light-grey w3-mobile">Book Now</a>
-  </div>
   <!-- Header -->
   <header class="w3-display-container w3-content" style="max-width:1500px;">
     <img class="w3-image" src="img/logo.jpg" alt="The Hotel" style="min-width:1000px" width="1500" height="800">
@@ -55,28 +35,5 @@
       </div>
     </div>
   </header>
-
-  <!-- Add Google Maps -->
-  <script>
-  function myMap() {
-    myCenter=new google.maps.LatLng(41.878114, -87.629798);
-    var mapOptions= {
-      center:myCenter,
-      zoom:12, scrollwheel: false, draggable: false,
-      mapTypeId:google.maps.MapTypeId.ROADMAP
-    };
-    var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
-
-    var marker = new google.maps.Marker({
-      position: myCenter,
-    });
-    marker.setMap(map);
-  }
-  </script>
-  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&callback=myMap"></script>
-  <!--
-  To use this code on your website, get a free API key from Google.
-  Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
-  -->
-</body>
-</html>
+  
+@endsection
