@@ -1,8 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\ContactController;
-use App\Http\Controllers\RoomsController;
+use App\Http\Controllers\FullController;
 
 /*
 |--------------------------------------------------------------------------
@@ -14,6 +13,7 @@ use App\Http\Controllers\RoomsController;
 | contains the "web" middleware group. Now create something great!
 |
 */
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -22,14 +22,16 @@ Route::get('/', function () {
 //     return view('rooms');
 // });
 
-Route::get('rooms', [RoomsController::class, 'showRooms']);
+Route::get('rooms', [FullController::class, 'showRooms']);
 
-Route::get('about', function () {
-    return view('about');
-});
+// Route::get('about', function () {
+//     return view('about');
+// });
+
+Route::get('about', [FullController::class, 'showAbout']);
 
 // Route::get('contact', function () {
 //     return view('contact');
 // });
 
-Route::get('contact', [ContactController::class, 'showContact']);
+Route::get('contact', [FullController::class, 'showContact']);
